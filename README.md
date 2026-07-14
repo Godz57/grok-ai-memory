@@ -3,6 +3,25 @@
 > Memória de longo prazo e **handoff entre agents**.  
 > Este kit **não reimplementa** o server Rust: orquestra install de hooks/MCP e uso no **Grok Build** e no **Pi**.
 
+## Start here
+
+Part of the [Godz57 Grok kit stack](https://github.com/Godz57/grok-tooling-playbook).  
+**New users** — install the playbook first, or the full stack in order:
+
+```powershell
+git clone https://github.com/Godz57/grok-tooling-playbook.git
+cd grok-tooling-playbook
+.\scripts\install-stack.ps1                 # Full
+.\scripts\install-stack.ps1 -Profile Core   # playbook + superpowers + craftsman
+```
+
+```bash
+./scripts/install-stack.sh
+./scripts/install-stack.sh core
+```
+
+[When to use what →](https://github.com/Godz57/grok-tooling-playbook#quick-routing)
+
 ## Por que você (Grok + Pi)
 
 | Agent | Captura (hooks) | Handoff automático no start |
@@ -70,6 +89,7 @@ Linguagem natural: *“onde paramos?”*, *“salva na memória que usamos Postg
 
 | Kit | Papel |
 |-----|--------|
+| [grok-tooling-playbook](https://github.com/Godz57/grok-tooling-playbook) | **Start here** + install-stack |
 | [grok-superpowers](https://github.com/Godz57/grok-superpowers) | Processo de eng |
 | [grok-pentest](https://github.com/Godz57/grok-pentest) / [grok-strix](https://github.com/Godz57/grok-strix) | Segurança |
 | [grok-cyber-skills](https://github.com/Godz57/grok-cyber-skills) | Playbooks SOC/DFIR |
